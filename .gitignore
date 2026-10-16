@@ -1,0 +1,37 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+frontend/node_modules/
+frontend/dist/
+frontend/test-results/
+frontend/playwright-report/
+var/
+# Runtime data can also be created with --data-dir outside var/.
+*.sqlite
+*.sqlite3
+*.db
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite-journal
+*.sqlite3-wal
+*.sqlite3-shm
+*.sqlite3-journal
+*.db-wal
+*.db-shm
+*.db-journal
+.DS_Store
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+
+# Recreated build, audit and coverage output.
+build/
+dist/
+.ruff_cache/
+.coverage
+htmlcov/
+*.log

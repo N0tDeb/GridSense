@@ -1,0 +1,11 @@
+# Replay fingerprints must not change with Git's platform newline conversion.
+* text=auto eol=lf
+*.png binary
+*.parquet binary
+*.zip binary
+*.woff binary
+*.woff2 binary
+# Retain byte-exact upstream sources, references and their provenance hashes.
+backend/gridsense/circuits/ieee13/* -text
+# Recorded outcome tables retain their exact CSV-writer newlines.
+experiments/**/*.csv -text

@@ -1,0 +1,22 @@
+GridSense — Live Grid Restoration and Controller Testing
+Copyright 2026 N0tDeb
+https://github.com/N0tDeb
+
+Original GridSense source code and original documentation are licensed under
+Apache License, Version 2.0. See LICENSE for the complete terms.
+
+Third-party components retain their respective licenses and copyright notices.
+The project license does not replace their terms or claim their authorship.
+
+The bundled IEEE13 circuit files are adapted from the OpenDSS distribution:
+Copyright (c) 2008-2014, Electric Power Research Institute, Inc.
+See backend/gridsense/circuits/ieee13/License.txt for the BSD-3-Clause terms
+and backend/gridsense/circuits/ieee13/provenance.json for upstream identity
+and adaptations.
+
+The standalone source/UI distribution includes third-party frontend code and
+locally bundled fonts. See frontend/THIRD_PARTY_NOTICES.txt for their copyright
+and license texts, including the SIL Open Font License for the bundled fonts.
+Python and Node dependencies retain the terms supplied with their packages.
+
+This NOTICE provides attribution information and does not modify any license.
