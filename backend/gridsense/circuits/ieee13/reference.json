@@ -1,0 +1,39 @@
+{
+  "source": {
+    "title": "Marcelo de Castro Fernandes, 2018 thesis, Table 13, Official Results column",
+    "url": "https://sites.ecse.rpi.edu/~vanfrl/documents/mscthesis/2018_Marcelo_Thesis.pdf",
+    "note": "Independently published IEEE reference values, transcribed by phase. The RPI table calls the regulator output 650; excluded to avoid bus-name ambiguity."
+  },
+  "tolerance_pu": 0.003,
+  "voltages_pu": {
+    "632.1": 1.021,
+    "632.2": 1.042,
+    "632.3": 1.0174,
+    "633.1": 1.018,
+    "633.2": 1.0401,
+    "633.3": 1.0148,
+    "634.1": 0.994,
+    "634.2": 1.0218,
+    "634.3": 0.996,
+    "645.2": 1.0329,
+    "645.3": 1.0155,
+    "646.2": 1.0311,
+    "646.3": 1.0134,
+    "671.1": 0.99,
+    "671.2": 1.0529,
+    "671.3": 0.9778,
+    "680.1": 0.99,
+    "680.2": 1.0529,
+    "680.3": 0.9778,
+    "684.1": 0.9881,
+    "684.3": 0.9758,
+    "611.3": 0.9738,
+    "652.1": 0.9825,
+    "692.1": 0.99,
+    "692.2": 1.0529,
+    "692.3": 0.9777,
+    "675.1": 0.9835,
+    "675.2": 1.0553,
+    "675.3": 0.9758
+  }
+}

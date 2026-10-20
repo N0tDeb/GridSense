@@ -1,0 +1,59 @@
+{
+  "schema_version": 2,
+  "configuration": "ieee13-published-official-reference-v2",
+  "source": {
+    "title": "Marcelo de Castro Fernandes, 2017 thesis, Table 13, Official Results column",
+    "url": "https://sites.ecse.rpi.edu/~vanfrl/documents/mscthesis/2018_Marcelo_Thesis.pdf",
+    "document_title": "Modeling and Simulation of Integrated Transmisson and Distribution Systems to Assess the Impacts of Distributed Energy Resources",
+    "cover_year": 2017,
+    "table": 13,
+    "column": "Official Results",
+    "printed_page": 51,
+    "pdf_page": 53,
+    "pdf_sha256": "301d616ae14dad5d5677d2b8ad8a648cecc7664c98b8aa47593825cf02c33acb",
+    "checked_at": "2026-10-15",
+    "note": "All 29 phase voltage targets were visually checked against the Official Results column. The three regulator-output values labeled 650 are excluded to retain the historical bus mapping."
+  },
+  "model_sha256": "e78ad86910eb7e03de4cc09dbffdb508061a2030617e4e928ba16674e983adae",
+  "legacy_reference_sha256": "44bd63ba5edbf8ab7a2f6d9b77008ec36017940f676a06c0472bbb24aed544f9",
+  "corrections": [
+    {
+      "node": "692.3",
+      "legacy_pu": 0.9777,
+      "official_pu": 0.9778,
+      "reason": "The legacy target came from the adjacent OpenModelica column."
+    }
+  ],
+  "tolerance_pu": 0.003,
+  "voltages_pu": {
+    "632.1": 1.021,
+    "632.2": 1.042,
+    "632.3": 1.0174,
+    "633.1": 1.018,
+    "633.2": 1.0401,
+    "633.3": 1.0148,
+    "634.1": 0.994,
+    "634.2": 1.0218,
+    "634.3": 0.996,
+    "645.2": 1.0329,
+    "645.3": 1.0155,
+    "646.2": 1.0311,
+    "646.3": 1.0134,
+    "671.1": 0.99,
+    "671.2": 1.0529,
+    "671.3": 0.9778,
+    "680.1": 0.99,
+    "680.2": 1.0529,
+    "680.3": 0.9778,
+    "684.1": 0.9881,
+    "684.3": 0.9758,
+    "611.3": 0.9738,
+    "652.1": 0.9825,
+    "692.1": 0.99,
+    "692.2": 1.0529,
+    "692.3": 0.9778,
+    "675.1": 0.9835,
+    "675.2": 1.0553,
+    "675.3": 0.9758
+  }
+}

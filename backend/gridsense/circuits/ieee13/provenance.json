@@ -1,0 +1,23 @@
+{
+  "source_repository": "https://github.com/tshort/OpenDSS",
+  "commit": "5005c668a72d20775f4c2d060feebb2866ba1d38",
+  "source_directory": "Distrib/IEEETestCases/13Bus",
+  "retrieved": "2026-09-16",
+  "files": {
+    "IEEE13Nodeckt.dss": "a8403f9b3bee958ed8a12cb826922c804b4c146caf27f5dfbe2ee1ec2dc95723",
+    "License.txt": "72e6cb08d3397a969f7763d87ae46bea03f2246a4a996524d0df19285a422560",
+    "reference.json": "44bd63ba5edbf8ab7a2f6d9b77008ec36017940f676a06c0472bbb24aed544f9",
+    "model.dss": "e78ad86910eb7e03de4cc09dbffdb508061a2030617e4e928ba16674e983adae",
+    "IEEE13Node_BusXY.csv": "f8dd1528c72f339ebf41bf1355ed64ef12fbe30864fcc839ed5e5e9dc527846e"
+  },
+  "adaptation": [
+    "model.dss removes unused IEEELineCodes redirect; all referenced mtx linecodes are local",
+    "Removes bus coordinate display and implicit solve",
+    "Uses documented alternate fixed regulator taps 1.0625 / 1.0500 / 1.06875; controls disabled",
+    "Retains upstream corrected 2016 cable matrices and concentrated 670 load approximation",
+    "IEEE13Plant alone adds two explicit experimental three-phase ties; no added ties in validation",
+    "Experimental ratings: original 3-phase lines700A, other lines300A, backup_633650A, backup_rg500A. Transformer ratings preserved",
+    "Experimental operating envelope0.90\u20131.10pu, all energized phases; not an industry safety standard",
+    "Critical designation675a and all-line isolation are experimental assumptions"
+  ]
+}

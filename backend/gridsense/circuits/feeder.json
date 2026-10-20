@@ -1,0 +1,36 @@
+{
+  "id": "gs-six-load-v1",
+  "description": "Custom balanced 3-phase, 33/11/0.415 kV teaching feeder. Not an IEEE benchmark or utility model.",
+  "source_bus": "source",
+  "distribution_bus": "sub",
+  "voltage_limits_pu": [0.95, 1.05],
+  "faulted_line": "feed_a",
+  "buses": [
+    {"id": "sub", "label": "Substation", "x": 380, "y": 20},
+    {"id": "b1", "label": "West feeder", "x": 90, "y": 160},
+    {"id": "a1", "label": "Medical campus", "x": 380, "y": 210},
+    {"id": "c1", "label": "East feeder", "x": 670, "y": 160},
+    {"id": "b2", "label": "West district", "x": 90, "y": 380},
+    {"id": "a2", "label": "Residential district", "x": 380, "y": 440},
+    {"id": "c2", "label": "East district", "x": 670, "y": 380}
+  ],
+  "lines": [
+    {"id": "feed_a", "from_bus": "sub", "to_bus": "a1", "length_km": 1.0, "normal_amps": 130, "normally_open": false, "label": "A · isolated section"},
+    {"id": "seg_a", "from_bus": "a1", "to_bus": "a2", "length_km": 0.7, "normal_amps": 100, "normally_open": false, "label": "A · sectionalizer"},
+    {"id": "feed_b", "from_bus": "sub", "to_bus": "b1", "length_km": 1.2, "normal_amps": 100, "normally_open": false, "label": "B · incoming"},
+    {"id": "seg_b", "from_bus": "b1", "to_bus": "b2", "length_km": 0.6, "normal_amps": 100, "normally_open": false, "label": "B · district"},
+    {"id": "feed_c", "from_bus": "sub", "to_bus": "c1", "length_km": 1.0, "normal_amps": 110, "normally_open": false, "label": "C · incoming"},
+    {"id": "seg_c", "from_bus": "c1", "to_bus": "c2", "length_km": 0.6, "normal_amps": 110, "normally_open": false, "label": "C · district"},
+    {"id": "tie_b", "from_bus": "b2", "to_bus": "a1", "length_km": 0.8, "normal_amps": 85, "normally_open": true, "label": "Tie B · west backup"},
+    {"id": "tie_c", "from_bus": "c2", "to_bus": "a1", "length_km": 1.2, "normal_amps": 85, "normally_open": true, "label": "Tie C · east backup"}
+  ],
+  "loads": [
+    {"id": "a1", "bus": "a1", "label": "Medical campus", "feeder": "a", "kw": 400, "kva": 800, "critical": true},
+    {"id": "a2", "bus": "a2", "label": "Residential district", "feeder": "a", "kw": 600, "kva": 1250, "critical": false},
+    {"id": "b1", "bus": "b1", "label": "West commercial", "feeder": "b", "kw": 450, "kva": 1250, "critical": false},
+    {"id": "b2", "bus": "b2", "label": "West residential", "feeder": "b", "kw": 250, "kva": 800, "critical": false},
+    {"id": "c1", "bus": "c1", "label": "East industrial", "feeder": "c", "kw": 500, "kva": 1250, "critical": false},
+    {"id": "c2", "bus": "c2", "label": "East residential", "feeder": "c", "kw": 350, "kva": 1000, "critical": false}
+  ]
+}
+
